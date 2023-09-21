@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VARCONS TECHNOLOGIES - Results</title>
+    <style>
+      /* Global CSS styles */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+
+      header {
+        background-color: #3498db;
+        color: #ffffff;
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 36px;
+      }
+
+      header img {
+        width: 250px;
+        height: 100px;
+        margin-top: 10px;
+      }
+
+      h2 {
+        margin-top: 20px;
+        font-size: 24px;
+      }
+
+      footer {
+        margin-top: 30px;
+      }
+
+      footer img {
+        width: 100%;
+        max-width: 800px;
+      }
+
+      /* CSS styles for the result section */
+      .result {
+        margin-top: 30px;
+      }
+
+      .result h3 {
+        font-size: 20px;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        width: 200px;
+        font-size: 16px;
+      }
+
+      button[type="submit"] {
+        background-color: #3498db;
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #2980b9;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>VARCONS TECHNOLOGIES</h1>
+      <img src="/static/images/company_logo.jpg" alt="Company Logo" />
+    </header>
+
+    <!-- Main Content -->
+    <h2>Twitter Sentiment Analysis during Covid Lockdown</h2>
+
+    <div class="result">
+      <h3>Results for {{ model_name }}:</h3>
+      <form action="/predict/{{ model_name }}" method="POST">
+        <input
+          type="text"
+          name="keyword"
+          placeholder="Enter a Keyword"
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+
+      {% if sentiment %}
+      <p>Sentiment: {{ sentiment }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <img src="/static/images/f1_scores.jpg" alt="F1 Scores" />
+    </footer>
+  </body>
+</html>

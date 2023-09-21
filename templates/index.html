@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VARCONS TECHNOLOGIES</title>
+    <style>
+      /* Global CSS styles */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+
+      header {
+        background-color: #3498db;
+        color: #ffffff;
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 36px;
+      }
+
+      header img {
+        width: 250px;
+        height: 100px;
+        margin-top: 10px;
+      }
+
+      h2 {
+        margin-top: 20px;
+        font-size: 24px;
+      }
+
+      footer {
+        margin-top: 30px;
+      }
+
+      footer img {
+        width: 100%;
+        max-width: 800px;
+      }
+
+      /* CSS styles for colorful and animated buttons */
+      .model-buttons a {
+        text-decoration: none;
+      }
+
+      .model-buttons a button {
+        background-color: #3498db;
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 18px;
+        margin: 0 10px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .model-buttons a button:hover {
+        background-color: #2980b9;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>VARCONS TECHNOLOGIES</h1>
+      <img src="/static/images/company_logo.jpg" alt="Company Logo" />
+    </header>
+
+    <!-- Main Content -->
+    <h2>Twitter Sentiment Analysis during Covid Lockdown</h2>
+
+    <div class="model-buttons">
+      <!-- Link to Naive Bayes model -->
+      <a href="/predict/naive_bayes">
+        <button>Naive Bayes</button>
+      </a>
+
+      <!-- Link to Logistic Regression model -->
+      <a href="/predict/logistic">
+        <button>Logistic Regression</button>
+      </a>
+
+      <!-- Link to Random Forest model -->
+      <a href="/predict/random_forest">
+        <button>Random Forest</button>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <img src="/static/images/f1_scores.jpg" alt="F1 Scores" />
+    </footer>
+  </body>
+</html>
