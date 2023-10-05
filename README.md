@@ -16,8 +16,7 @@ This repository contains the code and resources for a sentiment analysis project
   
 - *Model Deployment:* Loaded trained models using pickle files and deployed them on the local host using Flask at the backend.
 
-The web interface will be accessible at `http://localhost:5000`.
-
+The web interface will be accessible localhost once you run app.py file
 ## Project Structure
 
 - *`app.py`*: Contains the Flask application code for handling user requests and displaying results.
