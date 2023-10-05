@@ -24,7 +24,7 @@ The web interface will be accessible at `http://localhost:5000`.
 
 - *` models/`*: Directory containing the trained machine learning models saved as pickle files.
 
-- *` data/`*: Directory to store the scraped Twitter data and other relevant datasets.
+- *` data/`*: since the dataset to huge heres the link to dataset https://github.com/gabrielpreda/covid-19-tweets
 
 - *`utils/`*: Utility functions for data preprocessing, model training, and evaluation.
 
